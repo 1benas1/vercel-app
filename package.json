@@ -1,0 +1,35 @@
+{
+  "name": "nfc-google-api",
+  "version": "1.0.0",
+  "description": "NFC Google Review Cards Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [
+    "nfc",
+    "google",
+    "reviews",
+    "cards"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^8.6.0",
+    "nfc-google-api": "file:"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "react-scripts": "5.0.0"
+  }
+}
